@@ -1,0 +1,9 @@
+<div>
+    <h2 *ngIf="isValid">Este texto está sendo exibido pois cumpriu a condição IF</h2>
+    <h2 *ngIf="isValid; else notValid">Este texto também está sendo exibido pois cumpriu a condição IF</h2>
+    <ng-template #notValid>
+        <h2>
+            Este texto está sendo exibido pois não cumpriu a condição IF
+        </h2>
+    </ng-template>
+</div>

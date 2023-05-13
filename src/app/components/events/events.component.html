@@ -1,0 +1,9 @@
+<div>
+    <h2 *ngIf="isValid">Essa mensagem está sendo exibida pois cumpre o IF</h2>
+    <div *ngIf="isValid; else ocultar">
+        <button (click)="handleBoolean()">Ocultar Mensagem</button>
+    </div>
+    <ng-template #ocultar>
+        <button (click)="handleBoolean()">Exibir Mensagem</button>
+    </ng-template>
+</div>
